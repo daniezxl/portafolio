@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000">
+  <!-- EcoBC en construcción: wireframe tipo plano. Ilustración propia del sitio, no es una captura del producto. -->
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#1d35a3" stroke-opacity=".09" stroke-width="1"/>
+    </pattern>
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.6" fill="#1d35a3" fill-opacity=".22"/>
+    </pattern>
+    <pattern id="tape" width="56" height="56" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="28" height="56" fill="#a20926"/>
+      <rect x="28" width="28" height="56" fill="#f8f3e9"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="1000" fill="#f8f3e9"/>
+  <rect width="1600" height="1000" fill="url(#grid)"/>
+
+  <!-- Ventana -->
+  <rect x="80" y="70" width="1440" height="860" rx="18" fill="#f8f3e9" stroke="#1d35a3" stroke-width="3"/>
+  <path d="M80 140H1520" stroke="#1d35a3" stroke-width="3"/>
+  <circle cx="122" cy="105" r="9" fill="none" stroke="#1d35a3" stroke-width="3"/>
+  <circle cx="152" cy="105" r="9" fill="none" stroke="#1d35a3" stroke-width="3"/>
+  <circle cx="182" cy="105" r="9" fill="none" stroke="#1d35a3" stroke-width="3"/>
+  <text x="230" y="114" font-family="ui-monospace, Consolas, Menlo, monospace" font-size="26" font-weight="700" fill="#1d35a3">EcoBC</text>
+  <g fill="none" stroke="#1d35a3" stroke-width="2.5" stroke-dasharray="8 7">
+    <rect x="1140" y="90" width="110" height="30" rx="15"/>
+    <rect x="1268" y="90" width="110" height="30" rx="15"/>
+    <rect x="1396" y="90" width="96" height="30" rx="15"/>
+  </g>
+
+  <!-- Mapa (boceto) -->
+  <rect x="112" y="172" width="880" height="728" rx="10" fill="url(#dots)" stroke="#1d35a3" stroke-width="2.5" stroke-dasharray="12 9"/>
+  <text x="136" y="212" font-family="system-ui, sans-serif" font-size="22" fill="#1d35a3" fill-opacity=".75">Mapa · Baja California (boceto)</text>
+  <path d="M178 250 L812 250 L782 420 L800 600 L716 872 L560 872 L470 790 L352 640 L268 520 L214 410 Z"
+        fill="#1d35a3" fill-opacity=".06" stroke="#1d35a3" stroke-width="3" stroke-dasharray="14 10" stroke-linejoin="round"/>
+  <g font-family="system-ui, sans-serif" font-size="20" fill="#1d35a3">
+    <g><circle cx="220" cy="276" r="11" fill="#1d35a3"/><text x="240" y="283">Tijuana</text></g>
+    <g><circle cx="372" cy="276" r="11" fill="#1d35a3"/><text x="392" y="283">Tecate</text></g>
+    <g><circle cx="664" cy="276" r="11" fill="#1d35a3"/><text x="684" y="283">Mexicali</text></g>
+    <g><circle cx="234" cy="350" r="11" fill="#1d35a3"/><text x="254" y="357">Playas de Rosarito</text></g>
+    <g><circle cx="300" cy="476" r="11" fill="#1d35a3"/><text x="320" y="483">Ensenada</text></g>
+    <g><circle cx="742" cy="560" r="11" fill="#1d35a3"/><text x="620" y="600">San Felipe</text></g>
+    <g><circle cx="430" cy="738" r="11" fill="#1d35a3"/><text x="450" y="745">San Quintín</text></g>
+  </g>
+  <!-- Ondas alrededor de un punto de calor -->
+  <g fill="none" stroke="#a20926" stroke-width="2.5">
+    <circle cx="560" cy="430" r="14" fill="#a20926"/>
+    <circle cx="560" cy="430" r="34" stroke-dasharray="6 6"/>
+    <circle cx="560" cy="430" r="58" stroke-dasharray="6 8" stroke-opacity=".6"/>
+  </g>
+
+  <!-- Tarjetas de datos, todavía vacías -->
+  <g font-family="system-ui, sans-serif" fill="#1d35a3">
+    <g>
+      <rect x="1024" y="172" width="464" height="150" rx="10" fill="none" stroke="#1d35a3" stroke-width="2.5" stroke-dasharray="12 9"/>
+      <text x="1050" y="214" font-size="22">Calidad del aire</text>
+      <text x="1050" y="280" font-family="ui-monospace, Consolas, Menlo, monospace" font-size="44" font-weight="700">— AQI</text>
+      <rect x="1300" y="252" width="160" height="14" rx="7" fill-opacity=".18"/>
+      <rect x="1300" y="276" width="110" height="14" rx="7" fill-opacity=".18"/>
+    </g>
+    <g>
+      <rect x="1024" y="342" width="464" height="150" rx="10" fill="none" stroke="#1d35a3" stroke-width="2.5" stroke-dasharray="12 9"/>
+      <text x="1050" y="384" font-size="22">Playas</text>
+      <text x="1050" y="450" font-family="ui-monospace, Consolas, Menlo, monospace" font-size="44" font-weight="700">— / 7</text>
+      <rect x="1300" y="422" width="160" height="14" rx="7" fill-opacity=".18"/>
+      <rect x="1300" y="446" width="130" height="14" rx="7" fill-opacity=".18"/>
+    </g>
+    <g>
+      <rect x="1024" y="512" width="464" height="150" rx="10" fill="none" stroke="#1d35a3" stroke-width="2.5" stroke-dasharray="12 9"/>
+      <text x="1050" y="554" font-size="22">Incendios y puntos de calor</text>
+      <text x="1050" y="620" font-family="ui-monospace, Consolas, Menlo, monospace" font-size="44" font-weight="700">—</text>
+      <rect x="1300" y="592" width="160" height="14" rx="7" fill-opacity=".18"/>
+      <rect x="1300" y="616" width="90" height="14" rx="7" fill-opacity=".18"/>
+    </g>
+  </g>
+
+  <!-- Hoja de ruta -->
+  <g font-family="system-ui, sans-serif" font-size="21" fill="#1d35a3">
+    <text x="1024" y="712" font-size="20" fill-opacity=".75">Hoja de ruta</text>
+    <path d="M1040 750V870" stroke="#1d35a3" stroke-width="2.5"/>
+    <circle cx="1040" cy="750" r="11" fill="#1d35a3"/><text x="1066" y="757">Arquitectura</text>
+    <circle cx="1040" cy="790" r="11" fill="#f8f3e9" stroke="#1d35a3" stroke-width="3"/><circle cx="1040" cy="790" r="5" fill="#1d35a3"/><text x="1066" y="797">Backend y datos geoespaciales</text>
+    <circle cx="1040" cy="830" r="11" fill="#f8f3e9" stroke="#1d35a3" stroke-width="3"/><text x="1066" y="837" fill-opacity=".6">Reportes ciudadanos</text>
+    <circle cx="1040" cy="870" r="11" fill="#f8f3e9" stroke="#1d35a3" stroke-width="3"/><text x="1066" y="877" fill-opacity=".6">App y API pública</text>
+  </g>
+
+  <!-- Cinta de obra -->
+  <g transform="rotate(-8 800 930)">
+    <rect x="-60" y="890" width="1720" height="74" fill="url(#tape)"/>
+    <rect x="560" y="898" width="480" height="58" fill="#a20926"/>
+    <text x="800" y="938" text-anchor="middle" font-family="ui-monospace, Consolas, Menlo, monospace" font-size="30" font-weight="700" letter-spacing="4" fill="#f8f3e9">EN CONSTRUCCIÓN</text>
+  </g>
+</svg>

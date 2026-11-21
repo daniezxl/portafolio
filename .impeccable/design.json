@@ -1,0 +1,556 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-20T00:00:00Z",
+  "title": "Design System: Daniel Curiel",
+  "extensions": {
+    "colorMeta": {
+      "cobalt": {
+        "role": "primary",
+        "displayName": "Cobalto de porcelana",
+        "canonical": "#1d35a3",
+        "cssVar": "--cobalt (light), --plate-cobalt, --band-bg (light)",
+        "tonalRamp": [
+          "#0b1442",
+          "#13216a",
+          "#1d35a3",
+          "#3a52c0",
+          "#5f74d4",
+          "#8797e3",
+          "#b4bff0",
+          "#e0e5fa"
+        ]
+      },
+      "cobalt-night": {
+        "role": "primary",
+        "displayName": "Cobalto de porcelana (noche)",
+        "canonical": "#9aaaf6",
+        "cssVar": "--cobalt (dark)",
+        "tonalRamp": [
+          "#1a2150",
+          "#2c3880",
+          "#4457b4",
+          "#6276d6",
+          "#7f91ea",
+          "#9aaaf6",
+          "#c0caf9",
+          "#e5e9fd"
+        ]
+      },
+      "carmine": {
+        "role": "secondary",
+        "displayName": "Carmín de risografía",
+        "canonical": "#a20926",
+        "cssVar": "--carmine (light), --plate-carmine (dark)",
+        "tonalRamp": [
+          "#3a020c",
+          "#610416",
+          "#a20926",
+          "#c02a42",
+          "#d65564",
+          "#e5868e",
+          "#f1b8bb",
+          "#fbe5e6"
+        ]
+      },
+      "carmine-night": {
+        "role": "secondary",
+        "displayName": "Carmín de risografía (noche)",
+        "canonical": "#e8786a",
+        "cssVar": "--carmine (dark)",
+        "tonalRamp": [
+          "#4a1610",
+          "#7a281d",
+          "#ad3d2f",
+          "#d05a4a",
+          "#e8786a",
+          "#ef9a8f",
+          "#f6c1ba",
+          "#fce8e5"
+        ]
+      },
+      "plate-carmine": {
+        "role": "secondary",
+        "displayName": "Carmín de lámina",
+        "canonical": "#b1102c",
+        "cssVar": "--plate-carmine (light)",
+        "tonalRamp": [
+          "#3d040e",
+          "#6a0819",
+          "#b1102c",
+          "#c93348",
+          "#db5b69",
+          "#e88a92",
+          "#f3bcc0",
+          "#fce6e7"
+        ]
+      },
+      "stitch-rose": {
+        "role": "tertiary",
+        "displayName": "Hilo rosa",
+        "canonical": "#bc5952",
+        "cssVar": "--stitch-1",
+        "tonalRamp": [
+          "#3e1b18",
+          "#66302c",
+          "#93453f",
+          "#bc5952",
+          "#cc7a74",
+          "#db9d98",
+          "#eac2bf",
+          "#f7e6e5"
+        ]
+      },
+      "stitch-indigo": {
+        "role": "tertiary",
+        "displayName": "Hilo índigo",
+        "canonical": "#424c70",
+        "cssVar": "--stitch-2",
+        "tonalRamp": [
+          "#151827",
+          "#262c42",
+          "#424c70",
+          "#5b668c",
+          "#7b85a7",
+          "#9ea6c1",
+          "#c5cadb",
+          "#e9ebf2"
+        ]
+      },
+      "stitch-lilac": {
+        "role": "tertiary",
+        "displayName": "Hilo lila",
+        "canonical": "#9496ab",
+        "cssVar": "--stitch-3",
+        "tonalRamp": [
+          "#26262f",
+          "#3e3f4d",
+          "#5c5e70",
+          "#7a7c90",
+          "#9496ab",
+          "#b0b1c2",
+          "#cfd0da",
+          "#eeeef2"
+        ]
+      },
+      "stitch-moss": {
+        "role": "tertiary",
+        "displayName": "Hilo musgo",
+        "canonical": "#8aad50",
+        "cssVar": "--stitch-4",
+        "tonalRamp": [
+          "#222c12",
+          "#384a1d",
+          "#52692b",
+          "#6e8b3b",
+          "#8aad50",
+          "#a7c479",
+          "#c8dbaa",
+          "#ebf2de"
+        ]
+      },
+      "stitch-umber": {
+        "role": "tertiary",
+        "displayName": "Hilo sombra",
+        "canonical": "#2a2522",
+        "cssVar": "--stitch-5",
+        "tonalRamp": [
+          "#14110f",
+          "#2a2522",
+          "#433c37",
+          "#5e5650",
+          "#7d746d",
+          "#a0978f",
+          "#c6bfb8",
+          "#ebe7e3"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Papel",
+        "canonical": "#f8f3e9",
+        "cssVar": "--bg (light), --plate-paper (light)",
+        "tonalRamp": [
+          "#2e2a23",
+          "#4d473d",
+          "#736b5e",
+          "#9d9483",
+          "#c6bcab",
+          "#e3dacb",
+          "#efe8db",
+          "#f8f3e9"
+        ]
+      },
+      "paper-surface": {
+        "role": "neutral",
+        "displayName": "Papel de mesa",
+        "canonical": "#efe8db",
+        "cssVar": "--surface (light)"
+      },
+      "ink-copy": {
+        "role": "neutral",
+        "displayName": "Tinta de copia",
+        "canonical": "#2b2723",
+        "cssVar": "--text-copy (light)"
+      },
+      "ink-heading": {
+        "role": "neutral",
+        "displayName": "Tinta de título",
+        "canonical": "#1a1714",
+        "cssVar": "--heading (light)"
+      },
+      "ink-dim": {
+        "role": "neutral",
+        "displayName": "Tinta atenuada",
+        "canonical": "#675f57",
+        "cssVar": "--dim (light)"
+      },
+      "ink-faint": {
+        "role": "neutral",
+        "displayName": "Tinta tenue",
+        "canonical": "#716960",
+        "cssVar": "--faint (light)"
+      },
+      "graphite": {
+        "role": "neutral",
+        "displayName": "Grafito",
+        "canonical": "#171615",
+        "cssVar": "--bg (dark)",
+        "tonalRamp": [
+          "#171615",
+          "#22201e",
+          "#34312e",
+          "#4c4844",
+          "#6a655f",
+          "#918b83",
+          "#bdb8b1",
+          "#e8e5df"
+        ]
+      },
+      "graphite-surface": {
+        "role": "neutral",
+        "displayName": "Grafito de mesa",
+        "canonical": "#22201e",
+        "cssVar": "--surface (dark)"
+      },
+      "chalk-copy": {
+        "role": "neutral",
+        "displayName": "Tiza de copia",
+        "canonical": "#e8e5df",
+        "cssVar": "--text-copy (dark)"
+      },
+      "chalk-heading": {
+        "role": "neutral",
+        "displayName": "Tiza de título",
+        "canonical": "#f4f1eb",
+        "cssVar": "--heading (dark)"
+      },
+      "chalk-dim": {
+        "role": "neutral",
+        "displayName": "Tiza atenuada",
+        "canonical": "#aaa59e",
+        "cssVar": "--dim (dark)"
+      },
+      "chalk-faint": {
+        "role": "neutral",
+        "displayName": "Tiza tenue",
+        "canonical": "#918b83",
+        "cssVar": "--faint (dark)"
+      },
+      "plate-paper-night": {
+        "role": "neutral",
+        "displayName": "Hoja sobre la mesa",
+        "canonical": "#ddd5c5",
+        "cssVar": "--plate-paper (dark)"
+      },
+      "plate-ink": {
+        "role": "neutral",
+        "displayName": "Tinta de lámina",
+        "canonical": "#1d1a17",
+        "cssVar": "--plate-ink"
+      },
+      "band-cobalt-night": {
+        "role": "primary",
+        "displayName": "Banda de cobalto (noche)",
+        "canonical": "#14308c",
+        "cssVar": "--band-bg (dark)"
+      },
+      "band-paper": {
+        "role": "neutral",
+        "displayName": "Papel de banda",
+        "canonical": "#f3eee4",
+        "cssVar": "--band-fg (light)"
+      }
+    },
+    "alphaTokens": [
+      {
+        "name": "--line",
+        "light": "rgb(43 39 35 / 0.13)",
+        "dark": "rgb(232 229 223 / 0.11)",
+        "purpose": "Filetes, bordes de chips, bloques y diálogo."
+      },
+      {
+        "name": "--underline",
+        "light": "rgb(43 39 35 / 0.32)",
+        "dark": "rgb(232 229 223 / 0.3)",
+        "purpose": "Subrayado de enlaces en reposo."
+      },
+      {
+        "name": "--selection",
+        "light": "rgb(29 53 163 / 0.16)",
+        "dark": "rgb(154 170 246 / 0.22)",
+        "purpose": "Selección de texto."
+      },
+      {
+        "name": "--shadow",
+        "light": "rgb(43 30 15 / 0.2)",
+        "dark": "rgb(0 0 0 / 0.55)",
+        "purpose": "Color de las dos sombras del sistema."
+      },
+      {
+        "name": "--band-dim",
+        "light": "rgb(243 238 228 / 0.74)",
+        "dark": "rgb(240 234 223 / 0.74)",
+        "purpose": "Texto secundario en la banda."
+      },
+      {
+        "name": "--band-line",
+        "light": "rgb(243 238 228 / 0.32)",
+        "dark": "rgb(240 234 223 / 0.28)",
+        "purpose": "Filetes y subrayados en la banda."
+      },
+      {
+        "name": "--grain",
+        "light": "feTurbulence 0.85, opacidad 0.11, multiply",
+        "dark": "feTurbulence 0.85, opacidad 0.07, screen",
+        "purpose": "Grano de papel fijo sobre todo el sitio (z-index 60, sin eventos)."
+      }
+    ],
+    "typographyMeta": {
+      "display": {
+        "displayName": "Título de lectura",
+        "purpose": "Único h1 de notas, proyectos y colofón; título de la banda. 23px en móvil."
+      },
+      "headline": {
+        "displayName": "Título a tamaño de cuerpo",
+        "purpose": "Nombre en la portada y títulos de sección; se distingue solo por peso."
+      },
+      "body": {
+        "displayName": "Lectura",
+        "purpose": "Texto corrido en la columna de 640px."
+      },
+      "quote": {
+        "displayName": "Cita",
+        "purpose": "Citas en prosa, itálica, con filete cobalto."
+      },
+      "label": {
+        "displayName": "Interfaz",
+        "purpose": "Navegación, controles segmentados, menú de comandos, enlaces de la banda."
+      },
+      "caption": {
+        "displayName": "Metadato",
+        "purpose": "Fechas con cifras tabulares, pies de lámina, notas al margen, leyendas."
+      },
+      "code": {
+        "displayName": "Código",
+        "purpose": "Código en línea y en bloque (15.5px / 1.7), kbd y hexadecimales; sin ligaduras."
+      }
+    },
+    "shadows": [
+      {
+        "name": "hoja-apoyada",
+        "value": "0 0 0 1px var(--line), 0 18px 40px -28px var(--shadow)",
+        "purpose": "Solo la lámina de la portada."
+      },
+      {
+        "name": "canto-de-hoja",
+        "value": "0 0 0 1px var(--line)",
+        "purpose": "Portadas de lámina, miniaturas, especímenes; inset en muestras de color."
+      },
+      {
+        "name": "dialogo",
+        "value": "0 30px 70px -24px var(--shadow), 0 4px 14px -6px var(--shadow)",
+        "purpose": "Menú de comandos, sobre velo rgb(20 18 16 / 0.32) con blur 2px."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Entradas, desplazamientos de iconos, diálogo, aviso."
+      },
+      {
+        "name": "fast",
+        "value": "0.16s",
+        "purpose": "Cambios de color en navegación, índice y controles."
+      },
+      {
+        "name": "med",
+        "value": "0.24s",
+        "purpose": "Subrayados de enlaces, flechas externas, aviso."
+      },
+      {
+        "name": "slow",
+        "value": "0.3s",
+        "purpose": "Atenuación de filas hermanas (ease-in-out)."
+      },
+      {
+        "name": "enter",
+        "value": "0.7s ease-out, translateY(10px) + blur(2px), escalonado 90ms",
+        "purpose": "Entrada de bloques con data-animate."
+      },
+      {
+        "name": "dialog-in",
+        "value": "0.18s ease-out, translateY(-6px) scale(0.985)",
+        "purpose": "Apertura del menú de comandos."
+      },
+      {
+        "name": "plate-fps",
+        "value": "12 fps",
+        "purpose": "Ebullición de la lámina como estampado en stop-motion; un fotograma con movimiento reducido."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "mobile",
+        "value": "max-width: 767px",
+        "purpose": "Una columna, navegación en fila, lámina cuadrada, columnas en carrusel."
+      },
+      {
+        "name": "tablet",
+        "value": "max-width: 1139px",
+        "purpose": "Retícula 150px + 640px; notas al margen en línea."
+      },
+      {
+        "name": "wide",
+        "value": "min-width: 1140px",
+        "purpose": "La lámina invade el margen derecho."
+      }
+    ],
+    "openNotes": [
+      "El ornamento de la banda de cobalto es sencillo (festón + doble filete punteado).",
+      "Punto de cruz es la técnica más débil a tamaño de miniatura.",
+      "El conejo de la navegación en oscuro usa el cobalto aclarado (cobalt-night), no la tinta de imprenta."
+    ]
+  },
+  "components": [
+    {
+      "name": "Enlace de navegación",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Navegación fija del margen izquierdo; la página actual lleva un cuadro cobalto de 5px.",
+      "html": "<nav class=\"ds-nav\"><ul><li><a href=\"#\" aria-current=\"page\">Inicio</a></li><li><a href=\"#\">Proyectos</a></li><li><a href=\"#\">Notas</a></li><li><a href=\"#\">Colofón</a></li></ul></nav>",
+      "css": ".ds-nav ul { list-style: none; padding: 0 0 0 16px; margin: 0; display: grid; gap: 2px; } .ds-nav a { font-family: var(--font-ui), Geist, system-ui, sans-serif; font-size: 14px; line-height: 26px; color: var(--dim, #675f57); text-decoration: none; transition: color 0.16s ease; } .ds-nav a:hover, .ds-nav a[aria-current=\"page\"] { color: var(--heading, #1a1714); } .ds-nav a[aria-current=\"page\"]::before { content: \"\"; display: inline-block; width: 5px; height: 5px; margin: 0 8px 2px -13px; background: var(--cobalt, #1d35a3); } .ds-nav a:focus-visible { outline: 2px solid var(--cobalt, #1d35a3); outline-offset: 3px; border-radius: 2px; }"
+    },
+    {
+      "name": "Filas con atenuación",
+      "kind": "custom",
+      "refersTo": "row",
+      "description": "Lista de escritos: filetes de 1px, fecha tabular a la derecha, hermanas a 0.55 en hover.",
+      "html": "<div class=\"ds-rows\"><a class=\"ds-row\" href=\"#\"><span class=\"ds-row-title\">Colas de trabajo con Postgres</span><time>mar 2026</time></a><a class=\"ds-row\" href=\"#\"><span class=\"ds-row-title\">Evaluar un RAG sin engañarse</span><time>feb 2026</time></a></div>",
+      "css": ".ds-rows { border-top: 1px solid var(--line, rgb(43 39 35 / 0.13)); } .ds-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: baseline; gap: 20px; padding: 0.72em 0; border-bottom: 1px solid var(--line, rgb(43 39 35 / 0.13)); font-family: var(--font-reading), 'Charis SIL', Georgia, serif; font-size: 17px; color: var(--text-copy, #2b2723); text-decoration: none; transition: opacity 0.3s ease-in-out; } .ds-row-title { color: var(--heading, #1a1714); } .ds-row time { font-family: var(--font-ui), Geist, system-ui, sans-serif; font-size: 13px; color: var(--dim, #675f57); font-variant-numeric: lining-nums tabular-nums; } .ds-rows:hover .ds-row { opacity: 0.55; } .ds-rows:hover .ds-row:hover, .ds-row:focus-visible { opacity: 1; } .ds-row:focus-visible { outline: 2px solid var(--cobalt, #1d35a3); outline-offset: 3px; }"
+    },
+    {
+      "name": "Control segmentado",
+      "kind": "chip",
+      "refersTo": "segmented-option",
+      "description": "Palabras sin caja (Breve/Extensa, tema, técnica); la pulsada se subraya.",
+      "html": "<div class=\"ds-seg\" role=\"group\"><button type=\"button\" aria-pressed=\"true\">Breve</button><button type=\"button\" aria-pressed=\"false\">Extensa</button></div>",
+      "css": ".ds-seg { display: inline-flex; gap: 14px; font-family: var(--font-ui), Geist, system-ui, sans-serif; font-size: 14px; line-height: 20px; } .ds-seg button { font: inherit; background: none; border: 0; padding: 0; cursor: pointer; color: var(--dim, #675f57); text-decoration: underline; text-decoration-color: transparent; text-decoration-thickness: 1px; text-underline-offset: 6px; transition: color 0.16s ease, text-decoration-color 0.16s ease; } .ds-seg button:hover { color: var(--heading, #1a1714); } .ds-seg button[aria-pressed=\"true\"] { color: var(--heading, #1a1714); text-decoration-color: currentColor; } .ds-seg button:focus-visible { outline: 2px solid var(--cobalt, #1d35a3); outline-offset: 3px; border-radius: 2px; }"
+    },
+    {
+      "name": "Marca de ejemplo",
+      "kind": "chip",
+      "refersTo": "tag",
+      "description": "Señala contenido de relleno (ejemplo, pendiente).",
+      "html": "<span class=\"ds-tag\">ejemplo</span>",
+      "css": ".ds-tag { display: inline-block; padding: 0 6px; border: 1px solid var(--line, rgb(43 39 35 / 0.13)); border-radius: 4px; font-family: var(--font-ui), Geist, system-ui, sans-serif; font-size: 11px; line-height: 18px; color: var(--dim, #675f57); }"
+    },
+    {
+      "name": "Campo del menú de comandos",
+      "kind": "input",
+      "refersTo": "command-menu",
+      "description": "Diálogo de búsqueda: campo sin borde con filete inferior y elemento seleccionado sobre papel de mesa.",
+      "html": "<div class=\"ds-cmdk\"><label class=\"ds-cmdk-input\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" aria-hidden=\"true\"><circle cx=\"11\" cy=\"11\" r=\"7\"/><path d=\"m20 20-3.5-3.5\"/></svg><input placeholder=\"Busca una página, nota o acción\"></label><div class=\"ds-cmdk-group\">Páginas</div><div class=\"ds-cmdk-item\" aria-selected=\"true\">Proyectos</div><div class=\"ds-cmdk-item\">Notas</div></div>",
+      "css": ".ds-cmdk { width: min(560px, 100%); border: 1px solid var(--line, rgb(43 39 35 / 0.13)); border-radius: 12px; background: var(--bg, #f8f3e9); color: var(--text-copy, #2b2723); box-shadow: 0 30px 70px -24px var(--shadow, rgb(43 30 15 / 0.2)), 0 4px 14px -6px var(--shadow, rgb(43 30 15 / 0.2)); overflow: hidden; padding-bottom: 6px; } .ds-cmdk-input { display: flex; align-items: center; gap: 10px; padding: 0 14px; height: 52px; border-bottom: 1px solid var(--line, rgb(43 39 35 / 0.13)); color: var(--dim, #675f57); } .ds-cmdk-input input { flex: 1; min-width: 0; border: 0; outline: 0; background: transparent; color: var(--heading, #1a1714); font: 15px / 1 var(--font-ui), Geist, system-ui, sans-serif; } .ds-cmdk-input input::placeholder { color: var(--dim, #675f57); } .ds-cmdk-group { padding: 10px 16px 4px; font: 12px / 18px var(--font-ui), Geist, system-ui, sans-serif; color: var(--dim, #675f57); } .ds-cmdk-item { display: flex; align-items: center; min-height: 38px; margin: 0 6px; padding: 0 10px; border-radius: 6px; font: 14px / 20px var(--font-ui), Geist, system-ui, sans-serif; cursor: pointer; } .ds-cmdk-item:hover, .ds-cmdk-item[aria-selected=\"true\"] { background: var(--surface, #efe8db); color: var(--heading, #1a1714); }"
+    },
+    {
+      "name": "Banda de cobalto",
+      "kind": "card",
+      "refersTo": "band",
+      "description": "Cierre de página empapado en cobalto con borde festoneado y doble filete punteado.",
+      "html": "<footer class=\"ds-band\"><h2 class=\"ds-band-title\">Contacto</h2><p>Escríbeme a <a href=\"#\">hola@ejemplo.dev</a> <button type=\"button\" class=\"ds-copy\">Copiar</button></p></footer>",
+      "css": ".ds-band { position: relative; margin-top: 16px; background: var(--band-bg, #1d35a3); color: var(--band-fg, #f3eee4); padding: 52px 24px 28px; font-family: var(--font-reading), 'Charis SIL', Georgia, serif; font-size: 17px; line-height: 1.65; } .ds-band::before { content: \"\"; position: absolute; left: 0; right: 0; top: -11px; height: 12px; background: radial-gradient(circle at 50% 100%, var(--band-bg, #1d35a3) 0 11.4px, transparent 12px) 0 0 / 24px 12px repeat-x; } .ds-band::after { content: \"\"; position: absolute; left: 0; right: 0; top: 16px; height: 14px; background: linear-gradient(var(--band-line, rgb(243 238 228 / 0.32)), var(--band-line, rgb(243 238 228 / 0.32))) 0 0 / 100% 1px no-repeat, radial-gradient(circle, var(--band-dim, rgb(243 238 228 / 0.74)) 0 1.5px, transparent 2px) 0 5px / 12px 4px repeat-x, linear-gradient(var(--band-line, rgb(243 238 228 / 0.32)), var(--band-line, rgb(243 238 228 / 0.32))) 0 13px / 100% 1px no-repeat; opacity: 0.8; } .ds-band-title { margin: 0 0 12px; font-size: 26px; line-height: 1.25; letter-spacing: -0.012em; font-weight: 700; } .ds-band p { margin: 0; } .ds-band a { color: inherit; text-decoration-color: var(--band-line, rgb(243 238 228 / 0.32)); text-underline-offset: 2.5px; transition: text-decoration-color 0.24s ease; } .ds-band a:hover { text-decoration-color: var(--band-fg, #f3eee4); } .ds-copy { margin-left: 6px; padding: 1px 10px; border: 1px solid var(--band-line, rgb(243 238 228 / 0.32)); border-radius: 999px; background: none; font: 13px / 20px var(--font-ui), Geist, system-ui, sans-serif; color: var(--band-fg, #f3eee4); cursor: pointer; vertical-align: 2px; transition: background 0.16s ease, border-color 0.16s ease; } .ds-copy:hover { background: rgb(255 255 255 / 0.1); border-color: var(--band-dim, rgb(243 238 228 / 0.74)); } .ds-copy:active { background: var(--band-fg, #f3eee4); color: var(--band-bg, #1d35a3); } .ds-band :focus-visible { outline: 2px solid var(--band-fg, #f3eee4); outline-offset: 3px; border-radius: 2px; }"
+    },
+    {
+      "name": "Lámina impresa",
+      "kind": "custom",
+      "refersTo": "plate-press",
+      "description": "Hoja de papel que contiene el lienzo de la lámina, con pie de técnica. El lienzo real se dibuja en canvas; aquí se representa el marco.",
+      "html": "<figure class=\"ds-plate\"><button type=\"button\" class=\"ds-plate-press\" aria-label=\"Reimprimir la lámina\"><svg viewBox=\"0 0 32 32\" width=\"48\" height=\"48\" aria-hidden=\"true\"><g fill=\"#1d35a3\"><ellipse cx=\"14\" cy=\"21\" rx=\"9\" ry=\"7\"/><ellipse cx=\"19\" cy=\"17\" rx=\"4.2\" ry=\"4.6\"/><circle cx=\"22\" cy=\"13\" r=\"4.6\"/><ellipse cx=\"20\" cy=\"5.6\" rx=\"1.8\" ry=\"5\" transform=\"rotate(-15 20 5.6)\"/><ellipse cx=\"24.2\" cy=\"5.9\" rx=\"1.7\" ry=\"4.6\" transform=\"rotate(12 24.2 5.9)\"/><circle cx=\"5\" cy=\"19\" r=\"2.2\"/></g></svg></button><figcaption class=\"ds-plate-caption\"><span><strong>Porcelana</strong> cobalto, umbral y grano</span><span>Semitono · Tramado · Punto de cruz · Risografía</span></figcaption></figure>",
+      "css": ".ds-plate { margin: 0; } .ds-plate-press { display: grid; place-items: center; width: 100%; aspect-ratio: 8 / 5; border: 0; padding: 0; border-radius: 3px; overflow: hidden; cursor: pointer; background: var(--plate-paper, #f8f3e9); box-shadow: 0 0 0 1px var(--line, rgb(43 39 35 / 0.13)), 0 18px 40px -28px var(--shadow, rgb(43 30 15 / 0.2)); } .ds-plate-press:focus-visible { outline: 2px solid var(--cobalt, #1d35a3); outline-offset: 4px; } .ds-plate-caption { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 24px; margin-top: 12px; font: 13px / 20px var(--font-ui), Geist, system-ui, sans-serif; color: var(--dim, #675f57); } .ds-plate-caption strong { color: var(--heading, #1a1714); font-weight: 500; margin-right: 8px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Un motivo, muchas imprentas",
+    "overview": "El sitio es un cuaderno editorial silencioso: papel cálido, tinta de grafito, una columna de lectura de 640px flanqueada por dos márgenes de 192px, filas con filetes finos y subrayados de un píxel. Sobre ese cuaderno hay una sola pieza expresiva: la lámina, un chip con una red neuronal (pistas de circuito, neuronas que se activan, anillo de código) que se reimprime en cinco técnicas (porcelana, semitono, tramado, punto de cruz, risografía). Todo lo demás calla para que la lámina y el texto hablen.\n\nLa densidad es de libro, no de panel: el texto corre a 17px con interlínea 1.65, los títulos se distinguen por peso antes que por tamaño, y la interfaz (navegación, metadatos, pies) baja a Geist de 13-14px en un gris tibio. El color es tinta, no pintura: cobalto como única tinta de acento, carmín reservado al código y a la risografía. El cierre de cada página es la excepción deliberada: una banda de cobalto empapada con borde festoneado de porcelana.\n\nEn oscuro el cuaderno pasa a una mesa de grafito, pero la lámina sigue siendo una hoja impresa (papel #ddd5c5, mismas tintas) apoyada encima. El grano de papel cubre todo el sitio en ambos temas.",
+    "keyCharacteristics": [
+      "Retícula 192 / 640 / 192 con navegación fija en el margen izquierdo.",
+      "Serif de lectura (Charis SIL) para el contenido; Geist solo para interfaz y metadatos.",
+      "Una tinta de acento (cobalto), usada en puntos, marcadores, subrayado activo y foco.",
+      "Filetes de 1px y subrayados finos en lugar de tarjetas y rellenos.",
+      "La lámina impresa es la única pieza expresiva; anima a 12 fps como estampado en stop-motion.",
+      "Grano de papel fijo sobre toda la página."
+    ],
+    "rules": [
+      {
+        "name": "La regla de la tinta única",
+        "body": "El cobalto es la única tinta de acento de la interfaz. Aparece en marcas pequeñas (puntos de 4-5px, filetes de 1px, subrayados, foco), nunca como relleno de botones o tarjetas. La banda de cierre es la única superficie empapada.",
+        "section": "colors"
+      },
+      {
+        "name": "La regla del carmín cautivo",
+        "body": "El carmín vive en el código y en la lámina. Si aparece en un control, un título o un estado de interfaz, está mal.",
+        "section": "colors"
+      },
+      {
+        "name": "La regla de la hoja sobre la mesa",
+        "body": "En oscuro la página cambia; la lámina no. Las superficies que muestran la lámina conservan papel claro (`plate-paper-night`) y tintas de imprenta.",
+        "section": "colors"
+      },
+      {
+        "name": "La regla del peso antes que el tamaño",
+        "body": "En la portada y dentro de la prosa, la jerarquía se hace con peso e itálica a 17px. El único salto de tamaño es el título de 26px de las páginas de lectura.",
+        "section": "typography"
+      },
+      {
+        "name": "La regla de las dos voces",
+        "body": "Charis SIL para lo que se lee, Geist para lo que se opera. Un dato de interfaz en serif o un párrafo en sans rompe el sistema.",
+        "section": "typography"
+      },
+      {
+        "name": "La regla del papel plano",
+        "body": "Nada de la interfaz proyecta sombra. Las sombras pertenecen a objetos físicos (la hoja impresa) o a un diálogo que flota; filas, chips y controles se separan con filetes.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do mantener la retícula 192 / 640 / 192 con 24px de separación y poner la navegación y los índices en el margen izquierdo, las notas y fichas en el derecho.",
+      "Do escribir el contenido en Charis SIL a 17px / 1.65 y la interfaz en Geist a 13-14px en `ink-dim`.",
+      "Do separar listas y bloques con filetes de 1px (`--line`) y atenuar las hermanas a 0.55 en hover.",
+      "Do usar el cobalto solo en marcas pequeñas: cuadros de 4-5px, filetes, subrayado activo, foco de 2px con desfase de 3px.",
+      "Do mostrar la lámina siempre como hoja impresa (papel claro, radio 3px, canto de filete), también en oscuro.",
+      "Do marcar todo contenido de relleno con el chip \"ejemplo\" o \"pendiente\".",
+      "Do animar entradas con 10px de subida, 0.7s y escalonado de 90ms con `--ease-out`, y desactivar todo movimiento con `prefers-reduced-motion`.",
+      "Do cerrar cada página con la banda de cobalto festoneada."
+    ],
+    "donts": [
+      "Don't usar la plantilla de portafolio estudiantil: titular de héroe, avatar, barras de habilidades o retícula de tarjetas.",
+      "Don't añadir una segunda pieza expresiva junto a la lámina; el chip con la red neuronal es la única firma.",
+      "Don't usar el carmín ni los hilos del punto de cruz fuera del código y la lámina.",
+      "Don't rellenar botones o tarjetas con cobalto; la banda de cierre es la única superficie empapada.",
+      "Don't poner sombras en filas, chips o controles; solo la hoja impresa y el diálogo se levantan.",
+      "Don't subir títulos de sección por encima de 17px; el salto a 26px es exclusivo del título único de las páginas de lectura y de la banda.",
+      "Don't usar marcadores redondos para estados; los puntos son cuadrados."
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+node_modules
+.next
+out
+next-env.d.ts
+*.tsbuildinfo
+.env*.local
+.impeccable/review/
+.impeccable/mocks/
+.playwright-mcp/
+.claude/settings.local.json
+.impeccable/hook.cache.json
