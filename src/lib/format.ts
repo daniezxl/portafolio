@@ -1,8 +1,8 @@
 import type { Block } from "@/content/types";
 import { plain } from "@/components/Inline";
 
-const monthYear = new Intl.DateTimeFormat("es-MX", { month: "long", year: "numeric", timeZone: "UTC" });
-const full = new Intl.DateTimeFormat("es-MX", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" });
+const monthYear = new Intl.DateTimeFormat("en-US", { month: "long", year: "numeric", timeZone: "UTC" });
+const full = new Intl.DateTimeFormat("en-US", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" });
 
 export const formatMonth = (iso: string) => monthYear.format(new Date(iso));
 export const formatDate = (iso: string) => full.format(new Date(iso));

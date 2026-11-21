@@ -7,13 +7,13 @@ import { ThemeToggle } from "./ThemeToggle";
 /** Cierre de página: una banda de cobalto con borde de porcelana. */
 export function Footer() {
   return (
-    <footer className="band" id="contacto">
+    <footer className="band" id="contact">
       <div className="band-inner">
-        <h2 className="band-title">Contacto</h2>
+        <h2 className="band-title">Contact</h2>
         <p className="band-lede">
-          {site.contact} Escríbeme a{" "}
+          {site.contact} Email me at{" "}
           <a href={`mailto:${site.email}`}>{site.email}</a>
-          {site.emailPlaceholder && <span className="tag">pendiente</span>} <CopyEmail email={site.email} />
+          {site.emailPlaceholder && <span className="tag">pending</span>} <CopyEmail email={site.email} />
         </p>
         <ul className="band-links">
           {site.links.map((l) => (
@@ -22,7 +22,7 @@ export function Footer() {
                 {l.label}
                 <ArrowUpRight />
               </a>
-              {l.placeholder && <span className="tag">pendiente</span>}
+              {l.placeholder && <span className="tag">pending</span>}
             </li>
           ))}
         </ul>

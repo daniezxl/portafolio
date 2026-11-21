@@ -7,24 +7,24 @@ import { projects } from "@/content/projects";
 import { stagger } from "@/lib/stagger";
 
 export const metadata: Metadata = {
-  title: "Proyectos",
-  description: "Proyectos de backend e inteligencia artificial.",
+  title: "Projects",
+  description: "Products with real users, competition projects and what I'm building now.",
 };
 
 export default function ProjectsIndex() {
   return (
     <div className="page">
       <SiteNav />
-      <main className="main" id="contenido">
+      <main className="main" id="content">
         <h1 className="page-title" data-animate>
-          Proyectos
+          Projects
         </h1>
         <p className="page-lede" data-animate style={stagger(1)}>
-          Productos con usuarios reales, proyectos de competencia y lo que estoy construyendo ahora.
+          Products with real users, competition projects and what I'm building now.
         </p>
         <div className="project-rows" data-animate style={stagger(2)}>
           {projects.map((p) => (
-            <Link key={p.slug} href={`/proyectos/${p.slug}`} className="project-row">
+            <Link key={p.slug} href={`/projects/${p.slug}`} className="project-row">
               {p.image ? (
                 <Image
                   src={p.image.src}
@@ -43,7 +43,7 @@ export default function ProjectsIndex() {
                 <div className="project-row-head">
                   <span className="row-title">
                     {p.title}
-                    {p.placeholder && <span className="tag">ejemplo</span>}
+                    {p.placeholder && <span className="tag">example</span>}
                   </span>
                   <span className="label">{p.year}</span>
                 </div>

@@ -1,43 +1,44 @@
-# Daniel Curiel — portafolio
+# Daniel Curiel — portfolio
 
-Cuaderno personal en Next.js. Toma la estructura editorial de leerob.com y paco.me y le suma una *lámina*: un editor de código y un chip con una red neuronal que se imprimen en el navegador con cinco técnicas (porcelana, semitono, tramado, punto de cruz y risografía), como en el video de referencia.
+A personal notebook in Next.js. It takes the editorial structure of leerob.com and paco.me and adds a *plate*: a code editor and a chip with a neural network, printed in the browser with five techniques (porcelain, halftone, dither, cross-stitch and risograph).
 
-## Ejecutar
+## Run
 
 ```powershell
 npm install
 npm run dev        # http://localhost:3000
-npm run build      # build de producción (todas las rutas son estáticas)
+npm run build      # production build (every route is static)
 npm run start
 ```
 
-## Editar el contenido
+## Edit the content
 
-Todo el texto vive en `src/content/`. Los componentes no contienen texto propio.
+All text lives in `src/content/`. Components hold no copy of their own.
 
-| Archivo | Qué contiene |
+| File | What's in it |
 |---|---|
-| `src/content/site.ts` | nombre, dominio, correo, enlaces, bio breve y extensa, columnas de la portada, temas, sección «Ahora», lemas del pie |
-| `src/content/projects.ts` | proyectos; los que tienen `placeholder: true` muestran la etiqueta «ejemplo» |
-| `src/content/notes.ts` | notas (texto de muestra) |
+| `src/content/site.ts` | name, domain, email, links, short and long bio, home columns, topics, "Now" section, footer mottos |
+| `src/content/projects.ts` | projects: summary, problem, role and tools, result, demo and code buttons |
+| `src/content/notes.ts` | notes |
 
-En cualquier texto puedes escribir `*cursiva*`, `**negrita**`, `` `código` `` y `[enlace](/ruta)`. Las notas y los proyectos se escriben como bloques (`p`, `h2`, `h3`, `list`, `code`, `quote`). Un `p` con `aside` muestra una nota al margen.
+Any text accepts `*italic*`, `**bold**`, `` `code` `` and `[link](/path)`. Notes and projects are written as blocks (`p`, `h2`, `h3`, `list`, `code`, `quote`, `figure`, `figures`, `table`, `callout`). A `p` with `aside` shows a sidenote.
 
-Cada nota y cada proyecto elige la técnica de su lámina con `technique`: `porcelana`, `semitono`, `tramado`, `punto` o `riso`. El dibujo cambia según el `slug`.
+Each note and project picks its plate technique with `technique`: `porcelana`, `semitono`, `tramado`, `punto` or `riso`. The drawing changes with the `slug`.
 
-**Antes de publicar:** reemplaza el correo, los enlaces de `site.links`, el dominio de `site.url`, los proyectos de ejemplo, y agrega tu CV en `public/cv.pdf` (o quita ese enlace).
+**Before publishing:** set the real domain in `site.url`, and add your CV at `public/cv.pdf` if you want to link it.
 
-## Estructura
+## Structure
 
 ```
-src/app/            páginas: inicio, /proyectos, /notas, 404, sitemap, robots, icono, imagen OG
-src/components/     navegación, lámina, menú ⌘K, prosa con notas al margen, índice, tema, pie
-src/lib/plate/      motor de la lámina: motif.ts (dibujo), renderer.ts (técnicas)
-src/app/globals.css sistema de diseño: tokens claro/oscuro, retícula 192/640/192, componentes
+src/app/            pages: home, /projects, /notes, 404, sitemap, robots, icon, OG image
+src/components/     navigation, plate, ⌘K menu, prose with sidenotes, table of contents, theme, footer
+src/lib/plate/      plate engine: motif.ts and editor.ts (drawings), renderer.ts (techniques)
+src/app/globals.css design system: light/dark tokens, 192/640/192 grid, components
+public/projects/    project screenshots
 ```
 
-## Interacciones
+## Interactions
 
-- **Lámina:** avanza sola cada 3 s alternando técnica y motivo; clic, Enter o ←/→ la reimprimen a mano con un disuelto por bloques. Se anima a 12 fps, se pausa fuera de pantalla y respeta «reducir movimiento».
-- **⌘K / Ctrl K:** menú de comandos para ir a páginas, notas y proyectos, cambiar el tema, copiar el correo o reimprimir la lámina.
-- **Bio Breve / Extensa**, filas que atenúan a sus vecinas, índice que sigue la lectura, anclas en los títulos, botón para copiar el correo y tema Sistema / Claro / Oscuro sin destello al cargar.
+- **Plate:** advances every 3 s, alternating technique and motif; click, Enter or ←/→ reprint it by hand with a block dissolve. It animates at 12 fps, pauses off-screen and respects "reduce motion".
+- **⌘K / Ctrl K:** command menu to jump to pages, notes and projects, switch theme, copy the email or reprint the plate.
+- **Short / Long bio**, rows that dim their neighbors, a table of contents that follows your reading, heading anchors, a copy-email button and a System / Light / Dark theme with no flash on load.

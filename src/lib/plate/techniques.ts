@@ -5,15 +5,15 @@ export type Motif = "chip" | "editor";
 
 export const MOTIFS: { id: Motif; name: string }[] = [
   { id: "editor", name: "Editor" },
-  { id: "chip", name: "Red neuronal" },
+  { id: "chip", name: "Neural network" },
 ];
 
 export const TECHNIQUES: { id: Technique; name: string; note: string }[] = [
-  { id: "porcelana", name: "Porcelana", note: "cobalto, umbral y grano" },
-  { id: "semitono", name: "Semitono", note: "puntos a 45°" },
-  { id: "tramado", name: "Tramado", note: "Bayer 8×8, fotocopia" },
-  { id: "punto", name: "Punto de cruz", note: "rejilla de 8 px, cinco hilos" },
-  { id: "riso", name: "Risografía", note: "dos tintas desregistradas" },
+  { id: "porcelana", name: "Porcelain", note: "cobalt, threshold and grain" },
+  { id: "semitono", name: "Halftone", note: "dots at 45°" },
+  { id: "tramado", name: "Dither", note: "Bayer 8×8, photocopy" },
+  { id: "punto", name: "Cross-stitch", note: "8 px grid, five threads" },
+  { id: "riso", name: "Risograph", note: "two misregistered inks" },
 ];
 
 export const techniqueName = (t: Technique) => TECHNIQUES.find((x) => x.id === t)?.name ?? t;

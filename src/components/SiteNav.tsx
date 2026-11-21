@@ -7,9 +7,9 @@ import { openCommandMenu } from "./CommandMenu";
 import { Rabbit } from "./Icons";
 
 const LINKS = [
-  { href: "/", label: "Inicio" },
-  { href: "/proyectos", label: "Proyectos" },
-  { href: "/notas", label: "Notas" },
+  { href: "/", label: "Home" },
+  { href: "/projects", label: "Projects" },
+  { href: "/notes", label: "Notes" },
 ];
 
 /** Columna izquierda fija, al estilo de la meta de paco.me. */
@@ -20,8 +20,8 @@ export function SiteNav({ children }: { children?: ReactNode }) {
 
   return (
     <div className="meta">
-      <nav className="site-nav" aria-label="Principal">
-        <Link href="/" className="site-mark" aria-label="Daniel Curiel, inicio">
+      <nav className="site-nav" aria-label="Main">
+        <Link href="/" className="site-mark" aria-label="Daniel Curiel, home">
           <Rabbit />
         </Link>
         <ul>
@@ -37,7 +37,7 @@ export function SiteNav({ children }: { children?: ReactNode }) {
           })}
           <li>
             <button type="button" className="nav-search" onClick={openCommandMenu}>
-              Buscar <kbd>{mac ? "⌘" : "Ctrl"} K</kbd>
+              Search <kbd>{mac ? "⌘" : "Ctrl"} K</kbd>
             </button>
           </li>
         </ul>

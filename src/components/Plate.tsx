@@ -235,7 +235,7 @@ export function PlateHero({ seed = "daniel-curiel" }: { seed?: string }) {
       <button
         type="button"
         className="plate-press"
-        aria-label={`Lámina: ${motif.name} en ${current.name}. Reimprimir`}
+        aria-label={`Plate: ${motif.name} in ${current.name}. Reprint`}
         onClick={() => step(1)}
         onFocus={(e) => setPaused(e.currentTarget.matches(":focus-visible"))}
         onBlur={() => setPaused(false)}
@@ -263,7 +263,7 @@ export function PlateHero({ seed = "daniel-curiel" }: { seed?: string }) {
           <span className="plate-caption-name">{motif.name}</span>
           <span className="plate-caption-note">{current.note}</span>
         </span>
-        <span className="plate-techniques" role="group" aria-label="Técnica de impresión">
+        <span className="plate-techniques" role="group" aria-label="Printing technique">
           {TECHNIQUES.map((t, i) => (
             <button
               key={t.id}

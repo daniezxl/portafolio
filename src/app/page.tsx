@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <div className="page">
       <SiteNav />
-      <main className="main" id="contenido">
+      <main className="main" id="content">
         <h1 className="home-name" data-animate>
           {site.name}
         </h1>
@@ -48,7 +48,7 @@ export default function Home() {
                     )}
                     <p>
                       {item.description}
-                      {item.placeholder && <span className="tag">ejemplo</span>}
+                      {item.placeholder && <span className="tag">example</span>}
                     </p>
                   </div>
                 );
@@ -57,16 +57,15 @@ export default function Home() {
           ))}
         </div>
 
-        <section aria-labelledby="escritos" data-animate style={stagger(4)}>
-          <h2 id="escritos" className="section-title">
-            Escritos
+        <section aria-labelledby="writing" data-animate style={stagger(4)}>
+          <h2 id="writing" className="section-title">
+            Writing
           </h2>
           <div className="rows">
             {notes.map((n) => (
-              <Link key={n.slug} href={`/notas/${n.slug}`} className="row">
+              <Link key={n.slug} href={`/notes/${n.slug}`} className="row">
                 <span>
                   <span className="row-title">{n.title}</span>
-                  {n.placeholder && <span className="tag">borrador</span>}
                 </span>
                 {n.date && <time dateTime={n.date}>{formatMonth(n.date)}</time>}
               </Link>
@@ -74,9 +73,9 @@ export default function Home() {
           </div>
         </section>
 
-        <section aria-labelledby="temas">
-          <h2 id="temas" className="section-title">
-            Temas
+        <section aria-labelledby="topics">
+          <h2 id="topics" className="section-title">
+            Topics
           </h2>
           <ul className="topics">
             {site.topics.map((t) => (
@@ -84,7 +83,7 @@ export default function Home() {
             ))}
           </ul>
           <p className="tools">
-            <span className="label">Herramientas</span>{" "}
+            <span className="label">Tools</span>{" "}
             {site.tools.map((t, i) => (
               <span key={t} className="tool">
                 {t}
@@ -94,9 +93,9 @@ export default function Home() {
           </p>
         </section>
 
-        <section aria-labelledby="ahora" className="now">
-          <h2 id="ahora" className="section-title">
-            Ahora
+        <section aria-labelledby="now" className="now">
+          <h2 id="now" className="section-title">
+            Now
           </h2>
           {site.now.map((p, i) => (
             <p key={i}>

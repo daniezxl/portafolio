@@ -34,14 +34,14 @@ export default async function ProjectPage({ params }: Props) {
       <SiteNav>
         <Toc items={headings(p.body)} />
       </SiteNav>
-      <main className="main" id="contenido">
+      <main className="main" id="content">
         <article>
-          <Link href="/proyectos" className="back">
-            <ArrowLeft /> Proyectos
+          <Link href="/projects" className="back">
+            <ArrowLeft /> Projects
           </Link>
           <h1 className="page-title">
             {p.title}
-            {p.placeholder && <span className="tag">ejemplo</span>}
+            {p.placeholder && <span className="tag">example</span>}
           </h1>
           <p className="page-lede">{p.summary}</p>
           <div className="actions">
@@ -51,7 +51,7 @@ export default async function ProjectPage({ params }: Props) {
                 <ArrowUpRight />
               </a>
             ) : p.demo === null ? (
-              <span className="button button-off">Demo en construcción</span>
+              <span className="button button-off">Demo in progress</span>
             ) : null}
             {p.repo ? (
               <a className="button" href={p.repo.href} target="_blank" rel="noopener noreferrer">
@@ -59,7 +59,7 @@ export default async function ProjectPage({ params }: Props) {
                 <ArrowUpRight />
               </a>
             ) : p.repo === null ? (
-              <span className="button button-off">Código privado</span>
+              <span className="button button-off">Private code</span>
             ) : null}
           </div>
           {p.image ? (
@@ -83,25 +83,25 @@ export default async function ProjectPage({ params }: Props) {
           <Prose blocks={p.body} />
         </article>
       </main>
-      <aside className="side" aria-label="Datos del proyecto">
+      <aside className="side" aria-label="Project details">
         <dl className="facts">
           <div>
-            <dt>Fecha</dt>
+            <dt>Date</dt>
             <dd>{p.year}</dd>
           </div>
           {p.status && (
             <div>
-              <dt>Estado</dt>
+              <dt>Status</dt>
               <dd>{p.status}</dd>
             </div>
           )}
           <div>
-            <dt>Rol</dt>
+            <dt>Role</dt>
             <dd>{p.role}</dd>
           </div>
           {p.team && (
             <div>
-              <dt>Equipo</dt>
+              <dt>Team</dt>
               <dd>{p.team}</dd>
             </div>
           )}
@@ -117,13 +117,13 @@ export default async function ProjectPage({ params }: Props) {
           </div>
           {!p.image && (
             <div>
-              <dt>Lámina</dt>
+              <dt>Plate</dt>
               <dd>{techniqueName(p.technique)}</dd>
             </div>
           )}
           {p.links?.length ? (
             <div>
-              <dt>Enlaces</dt>
+              <dt>Links</dt>
               <dd>
                 <ul>
                   {p.links.map((l) => (
@@ -132,7 +132,7 @@ export default async function ProjectPage({ params }: Props) {
                         {l.label}
                         <ArrowUpRight className="ext" />
                       </a>
-                      {l.placeholder && <span className="tag">pendiente</span>}
+                      {l.placeholder && <span className="tag">pending</span>}
                     </li>
                   ))}
                 </ul>

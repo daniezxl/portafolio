@@ -212,7 +212,7 @@ export function drawEditor(
   const line1 = `$ ${p.prompt}`;
   ctx.fillText(line1, tx, ty + term * 0.36);
   const ready = Math.floor(t * 0.5) % 2 === 0;
-  ctx.fillText(ready ? "✓ listo en 1.2 s" : "▸ compilando…", tx, ty + term * 0.74);
+  ctx.fillText(ready ? "✓ ready in 1.2 s" : "▸ compiling…", tx, ty + term * 0.74);
   if (Math.floor(t * 2.2) % 2 === 0) {
     const mw = ctx.measureText(line1).width;
     ctx.fillRect(tx + mw + tfs * 0.3, ty + term * 0.36 - tfs * 0.5, tfs * 0.55, tfs);

@@ -43,19 +43,18 @@ export default async function NotePage({ params }: Props) {
       <SiteNav>
         <Toc items={headings(note.body)} />
       </SiteNav>
-      <main className="main" id="contenido">
+      <main className="main" id="content">
         <article>
-          <Link href="/notas" className="back">
-            <ArrowLeft /> Notas
+          <Link href="/notes" className="back">
+            <ArrowLeft /> Notes
           </Link>
           <h1 className="page-title">
             {note.title}
-            {note.placeholder && <span className="tag">borrador</span>}
           </h1>
           <p className="meta-line">
             {note.date && <time dateTime={note.date}>{formatDate(note.date)}</time>}
-            <span>{readingMinutes(note.body)} min de lectura</span>
-            <span>Lámina en {techniqueName(note.technique)}</span>
+            <span>{readingMinutes(note.body)} min read</span>
+            <span>Printed in {techniqueName(note.technique)}</span>
           </p>
           <div className="cover">
             <PlateCanvas seed={note.slug} technique={note.technique} motion="hover" className="plate-strip" framing="strip" onPointerLight />
@@ -64,17 +63,17 @@ export default async function NotePage({ params }: Props) {
         </article>
 
         {(newer || older) && (
-          <nav aria-label="Más notas" className="rows more">
+          <nav aria-label="More notes" className="rows more">
             {older && (
-              <Link href={`/notas/${older.slug}`} className="row">
+              <Link href={`/notes/${older.slug}`} className="row">
                 <span className="row-title">{older.title}</span>
-                <span className="row-meta">Anterior</span>
+                <span className="row-meta">Previous</span>
               </Link>
             )}
             {newer && (
-              <Link href={`/notas/${newer.slug}`} className="row">
+              <Link href={`/notes/${newer.slug}`} className="row">
                 <span className="row-title">{newer.title}</span>
-                <span className="row-meta">Siguiente</span>
+                <span className="row-meta">Next</span>
               </Link>
             )}
           </nav>

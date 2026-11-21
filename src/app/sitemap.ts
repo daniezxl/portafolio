@@ -6,10 +6,10 @@ import { site } from "@/content/site";
 export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const pages = ["", "/proyectos", "/notas"].map((p) => ({ url: `${site.url}${p}` }));
+  const pages = ["", "/projects", "/notes"].map((p) => ({ url: `${site.url}${p}` }));
   return [
     ...pages,
-    ...notes.map((n) => ({ url: `${site.url}/notas/${n.slug}`, lastModified: n.date })),
-    ...projects.map((p) => ({ url: `${site.url}/proyectos/${p.slug}` })),
+    ...notes.map((n) => ({ url: `${site.url}/notes/${n.slug}`, lastModified: n.date })),
+    ...projects.map((p) => ({ url: `${site.url}/projects/${p.slug}` })),
   ];
 }

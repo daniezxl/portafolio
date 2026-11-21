@@ -93,7 +93,7 @@ export function CommandMenu({ entries, email }: { entries: CommandEntry[]; email
       case "copy-email":
         try {
           await navigator.clipboard.writeText(email);
-          setToast("Correo copiado");
+          setToast("Email copied");
         } catch {
           window.location.href = `mailto:${email}`;
         }
@@ -125,7 +125,7 @@ export function CommandMenu({ entries, email }: { entries: CommandEntry[]; email
       <dialog
         ref={dialog}
         className="cmdk"
-        aria-label="Buscar en el sitio"
+        aria-label="Search the site"
         onClick={(e) => {
           if (e.target === dialog.current) close();
         }}
@@ -140,8 +140,8 @@ export function CommandMenu({ entries, email }: { entries: CommandEntry[]; email
                 setQuery(e.target.value);
                 setActive(0);
               }}
-              placeholder="Buscar páginas, notas, acciones…"
-              aria-label="Buscar"
+              placeholder="Search pages, notes, actions…"
+              aria-label="Search"
               aria-controls="cmdk-list"
               aria-activedescendant={results[active] ? `cmdk-${active}` : undefined}
               role="combobox"
@@ -152,7 +152,7 @@ export function CommandMenu({ entries, email }: { entries: CommandEntry[]; email
             <kbd>Esc</kbd>
           </label>
           <div ref={list} id="cmdk-list" className="cmdk-list" role="listbox">
-            {results.length === 0 && <p className="cmdk-empty">Nada con «{query}». Prueba con «notas» o «tema».</p>}
+            {results.length === 0 && <p className="cmdk-empty">Nothing for “{query}”. Try “notes” or “theme”.</p>}
             {results.map((r, i) => {
               const header = r.group !== lastGroup;
               lastGroup = r.group;

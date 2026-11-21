@@ -30,8 +30,8 @@ export function Toc({ items }: { items: Item[] }) {
 
   if (!items.length) return null;
   return (
-    <nav className="toc" aria-label="En esta nota">
-      <p className="toc-title">En esta página</p>
+    <nav className="toc" aria-label="Table of contents">
+      <p className="toc-title">On this page</p>
       <ol>
         {items.map((i) => (
           <li key={i.id} data-level={i.level}>

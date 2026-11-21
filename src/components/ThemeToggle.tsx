@@ -4,9 +4,9 @@ import { useEffect, useState } from "react";
 import { applyTheme, currentPref, type ThemePref } from "@/lib/theme";
 
 const OPTIONS: { id: ThemePref; label: string }[] = [
-  { id: "system", label: "Sistema" },
-  { id: "light", label: "Claro" },
-  { id: "dark", label: "Oscuro" },
+  { id: "system", label: "System" },
+  { id: "light", label: "Light" },
+  { id: "dark", label: "Dark" },
 ];
 
 export function ThemeToggle() {
@@ -28,7 +28,7 @@ export function ThemeToggle() {
   }, []);
 
   return (
-    <span className="segmented" role="group" aria-label="Tema">
+    <span className="segmented" role="group" aria-label="Theme">
       {OPTIONS.map((o) => (
         <button key={o.id} type="button" aria-pressed={pref === o.id} onClick={() => applyTheme(o.id)}>
           {o.label}

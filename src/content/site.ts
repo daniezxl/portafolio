@@ -1,32 +1,29 @@
 /**
- * Contenido del sitio.
+ * Site content.
  *
- * Los componentes leen únicamente de este módulo, de `projects.ts` y de
- * `notes.ts`. Lo que siga marcado con `placeholder: true` muestra la
- * etiqueta «ejemplo» o «pendiente» en pantalla.
+ * Components read only from this module, `projects.ts` and `notes.ts`.
  *
- * Sintaxis en línea disponible en cualquier texto:
- *   *cursiva*   **negrita**   `código`   [enlace](/ruta-o-url)
+ * Inline syntax available in any text:
+ *   *italic*   **bold**   `code`   [link](/path-or-url)
  */
 
 export const site = {
   name: "Daniel Curiel",
   fullName: "Daniel Jared Curiel Avalos",
-  /** PENDIENTE: cambia por tu dominio real cuando publiques (solo afecta metadatos, sitemap y OG). */
+  /** TODO: replace with the real domain when you publish (affects metadata, sitemap and OG only). */
   url: "https://danielcuriel.dev",
   description:
-    "Ingeniero en Sistemas Computacionales y CTO de Qubiko. Construyo productos con IA para problemas reales.",
-  locale: "es-MX",
+    "Computer Systems Engineer and CTO of Qubiko. I build AI products for real problems.",
+  locale: "en-US",
 
-  /** Frase de la banda de contacto. */
-  contact: "Si estás construyendo algo con software, IA o educación que vaya a llegar a usuarios reales, hablemos.",
+  /** Line in the contact band. */
+  contact: "If you're building something with software, AI or education that will reach real users, let's talk.",
 
-  /** Correo de contacto. */
   email: "danielmx.dev@gmail.com",
   emailPlaceholder: false,
 
   /**
-   * Enlaces externos. Para enlazar tu CV, súbelo a `public/cv.pdf` y añade
+   * External links. To link your CV, upload it to `public/cv.pdf` and add
    * { label: "CV (PDF)", href: "/cv.pdf" }.
    */
   links: [
@@ -35,81 +32,81 @@ export const site = {
     { label: "Qubiko", href: "https://www.qubiko.com.mx/" },
   ] as { label: string; href: string; placeholder?: boolean }[],
 
-  /** Bio en dos longitudes, como el selector de leerob.com. */
+  /** Bio in two lengths, like the toggle on leerob.com. */
   bio: {
     short: [
-      "Soy ingeniero en *Sistemas Computacionales* y construyo productos con IA de punta a punta: interfaz, backend y datos. Soy CTO y cofundador de [Qubiko](/proyectos/qubiko), donde llevamos la robótica a cerca de mil niñas y niños.",
-      "Me gusta tomar un problema real y convertirlo en software que alguien usa. Aquí están mis [proyectos](/proyectos) y algunas [notas](/notas).",
+      "I'm a *Computer Systems* engineer who builds AI products end to end: interface, backend and data. I'm CTO and co-founder of [Qubiko](/projects/qubiko), where we've brought robotics to about a thousand kids.",
+      "I like taking a real problem and turning it into software someone uses. Here are my [projects](/projects) and a few [notes](/notes).",
     ],
     long: [
-      "Soy Daniel Jared Curiel Avalos, ingeniero en *Sistemas Computacionales* por el Instituto Tecnológico de Mexicali, en Baja California. Construyo productos completos: frontend, backend, APIs, bases de datos y la capa de inteligencia artificial que los conecta.",
-      "Soy CTO y cofundador de [Qubiko](/proyectos/qubiko). Describes una idea y la plataforma te devuelve el diseño 3D, el código y la ruta para construirla. Tiene cerca de mil usuarios y ganó el primer lugar en POSIBLE x Bécalos 2026.",
-      "En el NASA Space Apps Challenge 2026 construí el Marte 3D, las misiones con datos de la NASA y la red de respaldo de [Taller de Don Rover](/proyectos/taller-de-don-rover): segundo lugar local y pase directo a la etapa global. Ahora diseño [EcoBC](/proyectos/ecobc), un mapa ambiental abierto de Baja California.",
-      "Pienso en producto antes que en código. Que algo compile no basta: tiene que resolverle algo a alguien. Hablo español nativo e inglés conversacional.",
+      "I'm Daniel Jared Curiel Avalos, a *Computer Systems* engineer from the Instituto Tecnológico de Mexicali, in Baja California. I build complete products: frontend, backend, APIs, databases and the AI layer that connects them.",
+      "I'm CTO and co-founder of [Qubiko](/projects/qubiko). You describe an idea and the platform gives you the 3D design, the code and the path to build it. It has about a thousand users and won first place at POSIBLE x Bécalos 2026.",
+      "At the NASA Space Apps Challenge 2026 I built the 3D Mars, the NASA-data missions and the fallback network for [Taller de Don Rover](/projects/taller-de-don-rover): second place locally and a direct pass to the global round. Now I'm designing [EcoBC](/projects/ecobc), an open environmental map of Baja California.",
+      "I think about product before code. Compiling isn't enough: it has to solve something for someone. I speak Spanish natively and conversational English.",
     ],
   },
 
-  /** Columnas al estilo paco.me. `href` es opcional. */
+  /** paco.me-style columns. `href` is optional. */
   columns: <
     { title: string; items: { title: string; href?: string; description: string; placeholder?: boolean }[] }[]
   >[
     {
-      title: "Construyendo",
+      title: "Building",
       items: [
         {
           title: "EcoBC",
-          href: "/proyectos/ecobc",
-          description: "Aire, playas e incendios de Baja California en un mapa.",
+          href: "/projects/ecobc",
+          description: "Baja California's air, beaches and wildfires on one map.",
         },
       ],
     },
     {
-      title: "Proyectos",
+      title: "Projects",
       items: [
         {
           title: "Qubiko",
-          href: "/proyectos/qubiko",
-          description: "Describe una idea, recibe el diseño 3D y el código.",
+          href: "/projects/qubiko",
+          description: "Describe an idea, get the 3D design and the code.",
         },
         {
           title: "Taller de Don Rover",
-          href: "/proyectos/taller-de-don-rover",
-          description: "Salvar una colonia en Marte con datos de la NASA.",
+          href: "/projects/taller-de-don-rover",
+          description: "Save a Mars colony with real NASA data.",
         },
       ],
     },
     {
-      title: "Reconocimientos",
+      title: "Recognition",
       items: [
         {
           title: "POSIBLE x Bécalos 2026",
-          description: "Primer lugar con Qubiko.",
+          description: "First place with Qubiko.",
         },
         {
           title: "NASA Space Apps 2026",
-          description: "Segundo lugar local y pase directo a la etapa global.",
+          description: "Second place locally and a direct pass to the global round.",
         },
         {
           title: "CREO MX Rosarito 2026",
-          description: "Tercer lugar estatal con Qubiko.",
+          description: "Third place statewide with Qubiko.",
         },
       ],
     },
   ],
 
-  /** Temas: lista de dos columnas con viñeta cuadrada, como las notas de leerob. */
+  /** Topics: two-column list with square bullets, like leerob's notes. */
   topics: [
-    "Desarrollo frontend",
-    "Backend e integración de APIs",
-    "Productos con inteligencia artificial",
-    "Diseño UI/UX",
-    "Bases de datos",
-    "Arquitectura de software",
-    "Educación STEM y EdTech",
-    "Emprendimiento tecnológico",
+    "Frontend development",
+    "Backend and API integration",
+    "AI products",
+    "UI/UX design",
+    "Databases",
+    "Software architecture",
+    "STEM education and EdTech",
+    "Tech entrepreneurship",
   ],
 
-  /** Herramientas que uso a diario. */
+  /** Tools I use every day. */
   tools: [
     "C++",
     "JavaScript",
@@ -124,19 +121,19 @@ export const site = {
     "Vercel",
   ],
 
-  /** Sección "Ahora" de paco.me. */
+  /** paco.me's "Now" section. */
   now: [
-    "Construyo funcionalidades nuevas para Qubiko y la base de EcoBC: descargar, limpiar y ubicar en el mapa datos de aire, playas e incendios de siete municipios.",
-    "*No solo desarrollo software: construyo soluciones tecnológicas para problemas del mundo real.*",
+    "Building new features for Qubiko and the foundation of EcoBC: downloading, cleaning and mapping air, beach and wildfire data for seven municipalities.",
+    "*I don't just write software: I build technology that solves real-world problems.*",
   ],
 
-  /** Lemas que rotan en el pie de página en cada visita. */
+  /** Mottos that rotate in the footer on each visit. */
   mottos: [
-    "Del problema al producto.",
-    "Lee el error completo.",
-    "Primero que funcione, después que sea claro.",
-    "Construye para alguien concreto.",
-    "Mide antes de optimizar.",
+    "From problem to product.",
+    "Read the whole error.",
+    "Make it work, then make it clear.",
+    "Build for someone specific.",
+    "Measure before you optimize.",
   ],
 } as const;
 

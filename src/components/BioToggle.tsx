@@ -15,12 +15,12 @@ export function BioToggle({ short, long }: { short: readonly string[]; long: rea
         <span id={`${id}-label`} className="label">
           Bio
         </span>
-        <span className="segmented" role="group" aria-label="Longitud de la bio">
+        <span className="segmented" role="group" aria-label="Bio length">
           <button type="button" aria-pressed={mode === "short"} onClick={() => setMode("short")}>
-            Breve
+            Short
           </button>
           <button type="button" aria-pressed={mode === "long"} onClick={() => setMode("long")}>
-            Extensa
+            Long
           </button>
         </span>
       </div>

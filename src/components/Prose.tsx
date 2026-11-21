@@ -10,7 +10,7 @@ function Heading({ level, text, id }: { level: 2 | 3; text: string; id?: string 
   return (
     <Tag id={anchor} className="prose-heading">
       <Inline text={text} />
-      <a className="heading-anchor" href={`#${anchor}`} aria-label="Enlace a esta sección">
+      <a className="heading-anchor" href={`#${anchor}`} aria-label="Link to this section">
         <LinkIcon />
       </a>
     </Tag>
@@ -19,7 +19,7 @@ function Heading({ level, text, id }: { level: 2 | 3; text: string; id?: string 
 
 function Shot({ image, sizes }: { image: Figure; sizes: string }) {
   return (
-    <a href={image.src} target="_blank" rel="noopener" className="shot-link" aria-label={`Abrir imagen: ${image.alt}`}>
+    <a href={image.src} target="_blank" rel="noopener" className="shot-link" aria-label={`Open image: ${image.alt}`}>
       <Image
         src={image.src}
         alt={image.alt}
@@ -32,7 +32,7 @@ function Shot({ image, sizes }: { image: Figure; sizes: string }) {
   );
 }
 
-const TONE_LABEL = { verified: "Comprobado", pending: "Pendiente", note: "Nota" } as const;
+const TONE_LABEL = { verified: "Verified", pending: "Pending", note: "Note" } as const;
 
 /** Renderiza bloques de contenido con notas al margen (sidenotes). */
 export function Prose({ blocks }: { blocks: Block[] }) {
@@ -81,7 +81,7 @@ export function Prose({ blocks }: { blocks: Block[] }) {
           case "code":
             return (
               <figure key={i} className="code-block">
-                <pre tabIndex={0} aria-label={b.lang ? `Código ${b.lang}` : "Código"}>
+                <pre tabIndex={0} aria-label={b.lang ? `Code ${b.lang}` : "Code"}>
                   <code>{b.code}</code>
                 </pre>
                 {(b.caption || b.lang) && (

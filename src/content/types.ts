@@ -1,6 +1,6 @@
 import type { Technique } from "@/lib/plate/techniques";
 
-/** Bloques de contenido para notas y proyectos. El texto admite *cursiva*, **negrita**, `código` y [enlaces](url). */
+/** Content blocks for notes and projects. Text supports *italic*, **bold**, `code` and [links](url). */
 export type Block =
   | { type: "p"; text: string; aside?: string }
   | { type: "h2"; text: string; id?: string }
@@ -8,12 +8,12 @@ export type Block =
   | { type: "list"; items: string[]; ordered?: boolean }
   | { type: "code"; code: string; lang?: string; caption?: string }
   | { type: "quote"; text: string; cite?: string }
-  /** Una imagen: captura, foto o diagrama servido desde `public/`. */
+  /** One image: a screenshot, photo or diagram served from `public/`. */
   | { type: "figure"; image: Figure; caption?: string; wide?: boolean }
-  /** Varias imágenes lado a lado (p. ej. escritorio + móvil). */
+  /** Several images side by side (e.g. desktop + mobile). */
   | { type: "figures"; images: Figure[]; caption?: string }
   | { type: "table"; head: string[]; rows: string[][]; caption?: string }
-  /** Señala el estado de un dato: comprobado, interpretación o pendiente. */
+  /** Flags the status of a fact: verified, note or pending. */
   | { type: "callout"; tone: "verified" | "pending" | "note"; title?: string; text: string };
 
 export interface Figure {
@@ -21,7 +21,7 @@ export interface Figure {
   alt: string;
   width: number;
   height: number;
-  /** Texto corto bajo la imagen dentro de una galería. */
+  /** Short text under the image inside a gallery. */
   label?: string;
 }
 
@@ -29,12 +29,10 @@ export interface Note {
   slug: string;
   title: string;
   summary: string;
-  /** Fecha ISO, p. ej. "2026-10-14". Opcional: sin fecha no se muestra. */
+  /** ISO date, e.g. "2026-10-14". Optional: hidden when missing. */
   date?: string;
-  /** Técnica de impresión de la lámina que acompaña a la nota. */
+  /** Printing technique of the plate that goes with the note. */
   technique: Technique;
-  /** true mientras la nota sea un borrador. Muestra la etiqueta «borrador». */
-  placeholder?: boolean;
   body: Block[];
 }
 
@@ -44,21 +42,21 @@ export interface Project {
   summary: string;
   year: string;
   role: string;
-  /** Con quién se hizo. */
+  /** Who it was built with. */
   team?: string;
-  /** Estado actual: «En producción», «Prototipo», «Planeación»… */
+  /** Current status: "In production", "Prototype", "Planning"… */
   status?: string;
   stack: string[];
   technique: Technique;
-  /** Botón principal a la demo en vivo. `null` muestra «Demo en construcción». */
+  /** Primary button to the live demo. `null` shows "Demo in progress". */
   demo?: { label: string; href: string } | null;
-  /** Botón al código. `null` muestra «Código privado». */
+  /** Button to the code. `null` shows "Private code". */
   repo?: { label: string; href: string } | null;
-  /** `placeholder: true` muestra «pendiente» junto al enlace hasta que pongas la URL real. */
+  /** `placeholder: true` shows "pending" next to the link until you add the real URL. */
   links?: { label: string; href: string; placeholder?: boolean }[];
-  /** Captura o ilustración del proyecto, servida desde `public/`. */
+  /** Project screenshot or illustration, served from `public/`. */
   image?: { src: string; alt: string; width: number; height: number; caption?: string };
-  /** true mientras el proyecto sea de ejemplo. Muestra la etiqueta «ejemplo». */
+  /** true while the project is an example. Shows the "example" tag. */
   placeholder?: boolean;
   body: Block[];
 }
